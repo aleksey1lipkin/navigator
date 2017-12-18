@@ -5,6 +5,9 @@
    		background: url('../img/navigator-logo.png') no-repeat;
    		height: 42px;
    }
+   .start__text {
+   		width: 100%;
+   }
 	.options__icon_discounts {
 		width: 26px;
 		height: 56px;
@@ -22,6 +25,15 @@
 	}
 	.arrow_icon {
 		background: url('../img/arrow-down.png') no-repeat;
+	}
+	.options-content {
+		width: auto;
+	}
+	.options__link {
+		width: rem(165px);
+	}
+	.options__item:nth-child(2) .options__link {
+		width: auto;
 	}
 	//PRICE-LIST
 	.price__icon {
@@ -139,6 +151,26 @@
 		.brand__logo {
 			width: 70px;
 		}
+	}
+	//fix flexbox bug
+	.price__text {
+		padding: 0;
+		width: 60%;
+	}
+	.price__text_geometry {
+		width: 100%;
+	}
+	.price__text_steering-wheel {
+		width: 100%;
+	}
+	.price__text_brakers {
+		width: 100%;
+	}
+	.price__text_conditioner {
+		width: 100%;
+	}
+	.request__title {
+		max-width: 100%;
 	}
 }
 
