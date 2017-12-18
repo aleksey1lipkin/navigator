@@ -448,24 +448,24 @@ a {
 
 @font-face {
   font-family: "MyriadPro-Regular";
-  src: url("fonts/MyriadPro-Regular.woff"); }
+  src: url("../fonts/MyriadPro-Regular.woff"); }
 
 @font-face {
   font-family: "MyriadPro-It";
-  src: url("fonts/MyriadPro-It.woff"); }
+  src: url("../fonts/MyriadPro-It.woff"); }
 
 @font-face {
   font-family: "MyriadPro-Semibold";
-  src: url("fonts/MyriadPro-Semibold.woff"); }
+  src: url("../fonts/MyriadPro-Semibold.woff"); }
 
 @font-face {
   font-family: "MyriadPro-Bold";
-  src: url("fonts/MyriadPro-Bold.woff"); }
+  src: url("../fonts/MyriadPro-Bold.woff"); }
 
 .header {
   position: relative;
   background-color: #808080;
-  background: url("img/header-bg.jpg") no-repeat;
+  background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
   text-transform: uppercase;
   z-index: 1; }
@@ -957,7 +957,7 @@ a {
   margin-bottom: 1.77778rem; }
 
 .slider__content_adv {
-  background: url("img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg.jpg") no-repeat;
   background-size: cover;
   min-height: 23.44444rem; }
 
@@ -1097,7 +1097,7 @@ a {
   position: absolute;
   top: 0.55556rem;
   right: -1.66667rem;
-  background: url("img/arrow-down-small.png") no-repeat;
+  background: url("../img/arrow-down-small.png") no-repeat;
   -webkit-transform: scaleY(-1);
           transform: scaleY(-1);
   width: 15px;
@@ -1122,7 +1122,7 @@ a {
   position: absolute;
   top: 1.33333rem;
   right: 1.16667rem;
-  background: url("img/arrow-down-small.png") no-repeat;
+  background: url("../img/arrow-down-small.png") no-repeat;
   width: 15px;
   height: 10px; }
 
@@ -1215,7 +1215,7 @@ a {
   display: block;
   width: 15px;
   height: 10px;
-  background: url("img/arrow-down-small.png") no-repeat;
+  background: url("../img/arrow-down-small.png") no-repeat;
   -webkit-transform: scaleY(-1) translateY(50%);
           transform: scaleY(-1) translateY(50%);
   right: 1.27778rem;
@@ -1336,7 +1336,7 @@ a {
   margin-right: 20px;
   border: 1px solid #808080;
   border-radius: 10px;
-  background: url("img/check.svg") center no-repeat;
+  background: url("../img/check.svg") center no-repeat;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in; }
 
@@ -1386,7 +1386,7 @@ a {
 .form-wrapper_review {
   position: relative;
   background-color: #e5e6e7;
-  background: url("img/form-bg.jpg") no-repeat;
+  background: url("../img/form-bg.jpg") no-repeat;
   background-size: cover;
   z-index: 1; }
 
@@ -1894,24 +1894,24 @@ a {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* стили только для IE10 IE11 */
   .start__logo {
-    background: url("img/navigator-logo.png") no-repeat;
+    background: url("../img/navigator-logo.png") no-repeat;
     height: 42px; }
   .options__icon_discounts {
     width: 26px;
     height: 56px;
-    background: url("img/discounts-2.png") no-repeat; }
+    background: url("../img/discounts-2.png") no-repeat; }
   .options__icon_guarantee {
     width: 50px;
     height: 56px;
-    background: url("img/guarantee.png") no-repeat; }
+    background: url("../img/guarantee.png") no-repeat; }
   .options__icon_recreation {
     width: 52px;
     height: 56px;
-    background: url("img/recreation.png") no-repeat; }
+    background: url("../img/recreation.png") no-repeat; }
   .arrow_icon {
-    background: url("img/arrow-down.png") no-repeat; }
+    background: url("../img/arrow-down.png") no-repeat; }
   .price__icon {
-    background: url("img/png-sprite/png-sprite.png") no-repeat;
+    background: url("../img/png-sprite/png-sprite.png") no-repeat;
     -webkit-transition: none;
     transition: none;
     width: 48px;
@@ -1973,23 +1973,23 @@ a {
   .price__item:hover .price__icon_others {
     background-position: -0px -0px; }
   .marker__icon {
-    background: url("img/location-passive.png") no-repeat; }
+    background: url("../img/location-passive.png") no-repeat; }
   .marker__icon_active {
-    background: url("img/location-active.png") no-repeat; }
+    background: url("../img/location-active.png") no-repeat; }
   .map__icon {
     height: 13px;
-    background: url("img/arrow-up.png") no-repeat; }
+    background: url("../img/arrow-up.png") no-repeat; }
   .brand__logo {
-    background: url("img/Navigator-logo-black.png") no-repeat;
+    background: url("../img/Navigator-logo-black.png") no-repeat;
     background-size: cover; } }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 992px), screen and (-ms-high-contrast: none) and (max-width: 992px) {
   .brand__logo {
-    background: url("img/Navigator-logo-large.png") no-repeat; } }
+    background: url("../img/Navigator-logo-large.png") no-repeat; } }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 768px), screen and (-ms-high-contrast: none) and (max-width: 768px) {
   .brand__logo {
-    background: url("img/Navigator-logo-medium.png") no-repeat; } }
+    background: url("../img/Navigator-logo-medium.png") no-repeat; } }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 576px), screen and (-ms-high-contrast: none) and (max-width: 576px) {
   .brand__logo {
