@@ -1,0 +1,30 @@
+.slider__content_review {
+	display: flex;
+	flex-direction: column;
+	background: none;
+	background-color: $lightgrey;
+	min-height: auto;
+	padding-left: rem(115px);
+	padding-right: 5rem;
+    padding-top: rem(25px);
+    padding-bottom: rem(15px);
+}
+.slider__comment {
+	@include myriadPro(regular);
+	font-size: rem(20px);
+    letter-spacing: 0.025em;
+    line-height: 1.41;
+    margin-bottom: rem(22px);
+    text-transform: none;
+}
+.slider__author {
+	@include myriadPro(semibold);
+	font-size: rem(16px);
+	color: $black;
+	text-transform: none;
+	letter-spacing: 0.03125em;
+}
+.slider__button_rev {
+	margin-bottom: rem(85px);
+}
+    

@@ -1,0 +1,91 @@
+.location {
+	background-color:  $black;
+}
+.location__title {
+	@include myriadPro(bold);
+	text-align: center;
+	font-size: rem(32px);
+	color: $yellow;
+	text-transform: uppercase;
+	padding-top: rem(80px);
+	letter-spacing: 0.0625em;
+	margin-bottom: rem(42px);
+	position: relative;
+}
+.location__title::after {
+	content: "";
+    position: absolute;
+    width: 2px;
+    height: rem(175px);
+    background-color: #4e5a60;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(158px);
+}
+.city {
+	display: flex;
+    flex-flow: row nowrap;
+  	@include myriadPro(regular);
+    align-self: center;
+    width: 66%;
+}
+.marker {
+	margin-bottom: rem(24px);
+}
+.marker__icon {
+	width: 39px;
+	height: 60px;
+	fill: #4e5a60;
+}
+.marker__icon_active {
+	fill: $yellow;
+}
+.city__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #4e5a60;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.city__title {
+	text-transform: uppercase;
+	font-size: rem(24px);
+	margin-bottom: rem(14px);
+	background-image: linear-gradient(to right, #4e5a60 50%, transparent 50%);
+    background-position: 0 1.4rem;
+    background-repeat: repeat-x;
+    background-size: 3px 1px;
+}
+.city__adress {
+	margin-bottom: 7px;
+}
+.city__time {
+	margin-bottom: rem(80px);
+}
+.city__content_active {
+	position: relative;
+	margin-right: rem(225px);
+}
+.city__content_active::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 99%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top: 24px solid $black;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	border-bottom: 0;
+	z-index: 10;
+}
+.city__title_active {
+	color: #ffcc05;
+	background: none;
+}
+.city__adress_active, .city__time_active {
+	color: #fff;
+}

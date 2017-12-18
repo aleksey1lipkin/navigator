@@ -1,0 +1,35 @@
+$container-width: 1140px;
+
+// Colors:
+
+$yellow: #fbca0b;
+$black: #263238;
+$lightgrey: #e5e6e7;
+$grey: #808080;
+// #cccccc;
+// #ffcc05;
+// #4e5a60;
+// #4d4d4d;
+// #151515;
+
+@import "misc/normalize.scss";
+@import "misc/adjustments.scss";
+@import "misc/fonts.scss";
+@import "misc/mixins.scss";
+
+@import "sections/header.scss";
+@import "sections/price.scss";
+@import "sections/slider-adv.scss";
+@import "sections/form-request.scss";
+@import "sections/slider-review.scss";
+@import "sections/form-review.scss";
+@import "sections/location.scss";
+@import "sections/footer.scss";
+@import "sections/map.scss";
+
+//responsive
+@import "misc/media.scss";
+
+//IE hacks
+@import "misc/hacks.scss";
+

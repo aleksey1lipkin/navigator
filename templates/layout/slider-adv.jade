@@ -1,0 +1,25 @@
+section.slider-wrapper
+	.container
+		p(
+		class='slider__title'
+		id='sliderTitle')
+			| Почему выбирают автосервисы 
+			q.quote
+				| Навигатор
+		.slider
+			.slider__content.slider__content_adv
+				span(
+				class='arrow_slider arrow_slider-right')
+				span(
+				class='arrow_slider arrow_slider-left')
+			.slider__switch
+				+sliderButton('slide-adv-one', 'slider-adv')(checked='checked')
+				+sliderButton('slide-adv-two', 'slider-adv')
+				+sliderButton('slide-adv-three', 'slider-adv')
+				+sliderButton('slide-adv-four', 'slider-adv')
+				+sliderButton('slide-adv-five', 'slider-adv')
+			.registration.registration_slider
+				a(
+				class='registration__link registration__link_slider'
+				href='#form')
+					| Записаться

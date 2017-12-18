@@ -1,0 +1,31 @@
+.location
+	.container
+		p(
+		class='location__title'
+		id='contacts')
+			| Как нас найти
+		.city
+			.city__content.city__content_active
+				.marker
+					svg(
+					class='marker__icon marker__icon_active')
+						use(
+						xlink:href="/img/svg/symbol/svg/sprite.symbol.svg#location-active")
+				p.city__title.city__title_active
+					| Тольятти
+				p.city__adress.city__adress_active
+					| Борковская, 65 | (8482) 37-95-30
+				p.city__time.city__time_active
+					| 8:00 - 20:00
+			.city__content
+				.marker
+					svg(
+					class='marker__icon')
+						use(
+						xlink:href="/img/svg/symbol/svg/sprite.symbol.svg#location-active")
+				p.city__title
+					| Сызрань
+				p.city__adress
+					| Опорный, 16 | (8464) 37-30-60
+				p.city__time
+					| 8:00 - 20:00

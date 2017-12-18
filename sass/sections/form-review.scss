@@ -1,0 +1,53 @@
+.form-wrapper_review {
+	position: relative;
+	background-color: $lightgrey;
+	background: url('/img/form-bg.jpg') no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.form-wrapper_review::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: $lightgrey;
+	opacity: .9;
+	z-index: -1;
+}
+.form__title {
+	@include myriadPro(bold);
+	font-size: rem(32px);
+	color: $black;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: rem(25px);
+	letter-spacing: 0.0625em;
+}
+.form__item_review {
+	margin-bottom: rem(29px);
+}
+.form__list_review::after {
+	content: '';
+	width: 31.35802%;
+}
+.form__input_review {
+	padding: rem(16px) rem(22px);
+	border: none;
+}
+.form__item_textarea-rev {
+	margin-bottom: rem(36px);
+}
+.form__label_review {
+	margin-bottom: rem(29px);
+}
+.form__label_review::before {
+	background-color: #fff;
+	border-color: transparent;
+}
+.registration__link_review {
+	padding: rem(19px) rem(38px);
+	margin-bottom: rem(85px);
+	text-transform: uppercase;
+}

@@ -1,0 +1,78 @@
+article.form-wrapper.form-wrapper_review
+	.container
+		form(
+		class='form'
+		action='#'
+		method='post')
+			p(
+			class='form__title'
+			id='formReview')
+				| Нам важен ваш отзыв
+			.form-content
+				ul.form__list.form__list_review
+					li.form__item.form__item_review
+						.form__field
+							label.form__label.form__label_required
+								| Представьтесь, пожалуйста
+							input(
+							class='form__input form__input_review'
+							type='text'
+							name='login'
+							placeholder='Петров Петр')
+					li.form__item.form__item_review
+						.form__field
+							label.form__label.form__label_required
+								| Телефон
+							input(
+							class='form__input form__input_review'
+							type='tel'
+							name='phone'
+							placeholder='+7 999 666 99 66')
+					li.form__item.form__item_review
+						.form__field
+							label.form__label.form__label_required
+								| E-mail
+							input(
+							class='form__input form__input_review'
+							type='email'
+							name='email'
+							placeholder='example@mail.ru')
+					li.form__item.form__item_review
+						.form__field
+							label.form__label.form__label_required
+								| Дата и время обращения к нам
+							input(
+							class='form__input form__input_review'
+							type='text'
+							name='auto'
+							placeholder='22.05.2016 в 18:00')
+					li.form__item.form__item_review
+						.form__field
+							label.form__label
+								| Номер заказ-наряда
+							input(
+							class='form__input form__input_review'
+							type='text'
+							name='date'
+							placeholder='123')
+				.form__item_textarea.form__item_textarea-rev
+					.form__field
+						label.form__label.form__label_required
+							| Текст отзыва
+						textarea(
+						class='form__input form__input_textarea form__input_review'
+						name='extra')
+				.personal
+					input(
+					class='form__checkbox'
+					type='checkbox'
+					id='approve')
+					label(
+					class='form__label form__label_checkbox form__label_review'
+					for='approve')
+						| Согласен на обработку персональных данных
+				.registration.registration_submit
+					input(
+					class='registration__link registration__link_review'
+					type='submit'
+					value='Отправить')

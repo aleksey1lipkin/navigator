@@ -1,0 +1,305 @@
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 16px;
+	}
+	.container {
+		width: 960px;
+	}
+	.nav__item {
+		margin-right: 1.5rem;
+	}
+	.phones__city {
+    	margin-left: 1rem;
+	}
+	.price__item {
+		width: 30%;
+	}
+	.price__list {
+		font-size: 1rem;
+	}
+	.city {
+		justify-content: space-between;
+	}
+	.city__content_active {
+		margin-right: 0;
+	}
+	.brand {
+    	margin-right: 2rem;
+	}
+	.nav-wrapper_footer {
+		.nav__item {
+			margin-right: 1rem;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 15px;
+	}
+	.container {
+		width: 720px;
+		padding: 0 20px;
+	}
+	.nav-wrapper {
+		font-size: 0.866667rem;
+	}
+	.nav__item {
+    	margin-right: 0.758333rem;
+	}
+	.request-wrapper {
+		font-size: 1.6rem;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0;
+	}
+	.request__title {
+		margin-right: 0;
+		margin-bottom: 0.2rem;
+	}
+	.select-city__input:checked ~ .cities {
+	    top: -14px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.form__item {
+		width: 48%;
+	}
+	.form__label {
+		font-size: 0.866667rem;
+    	margin-bottom: 0.875rem;
+	}
+	.slider__content_adv {
+    	min-height: 19rem;
+	}
+	.brand {
+		margin-right: 0.875rem;
+	}
+	.brand__logo {
+		width: 5rem;
+		height: 11px;
+	}
+	.nav-wrapper_footer {
+		.nav__item {
+			margin-right: 0.3rem;
+		}
+		.phones__city {
+			margin-left: 0.3rem;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+	.container {
+		width: 540px;
+		padding: 0 15px;
+	}
+	.nav-wrapper::after {
+		display:none;
+	}
+	.nav {
+		position: relative;
+	}
+	.nav__link::after {
+		margin-top: 27px;
+	}
+	.nav::after {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $black;
+	}
+	.phones {
+		align-items: flex-end;
+    	justify-content: flex-end;
+	}
+	.phones__link::before {
+		display: none;
+	}
+	.phones__link::after {
+		margin-top: 0;
+		transform: none;
+	}
+	.phones__city {
+		margin-bottom: 0.5rem;
+	}
+	.start__text {
+		text-align: center;
+	}
+	.options {
+		width: 100%;
+	}
+	.price__item {
+		width: 47%;
+	}
+	.slider__content_adv {
+    	min-height: 16rem;
+	}
+	.slider__content::before {
+		right: 3.5rem;
+	}
+	.slider__content::after {
+		left: 3.5rem;
+	}
+	.request-wrapper {
+		font-size: 1.7rem;
+	}
+	.request__title {
+		margin-bottom: 0.25rem;
+	}
+	.request__select {
+		margin-bottom: 2.5625rem;
+	}
+	.city {
+		width: 100%;
+	}
+	.brand {
+    	margin-right: 0.7rem;
+	}
+	.nav-wrapper_footer {
+		align-items: flex-start;
+		padding-bottom: 0;
+   		margin-bottom: 1rem;
+		.nav__item {
+			margin-right: 0.4rem;
+		}
+		.phones__city {
+			margin-left: 0;
+		}
+	}
+	.map {
+		height: 335px;
+	}
+	.select-service {
+		padding-bottom: 15px;
+    	padding-top: 15px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	html {
+		font-size: 12px;
+	}
+	.container {
+		width: 100%;
+		max-width: 540px;
+		padding: 0 10px;
+	}
+	.nav::after {
+		display: none;
+	}
+	.nav__link::after, .phones__link::after {
+		margin-top: 0;
+		transform: translateX(20px);
+	}
+	.nav-wrapper {
+		flex-direction: column;
+		font-size: 1rem;
+	}
+	.nav__list {
+		flex-direction: column;
+	}
+	.nav__item {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+	.phones {
+		justify-content: center;
+	}
+	.request__title {
+		text-align: center;
+	}
+	.start__logo {
+		width: 315px; 
+    }
+	.start__title {
+		text-align: center;
+	}
+	.options__list {
+		flex-direction: column;
+	}
+	.options-content {
+		width: 100%;
+	}
+	.price__item {
+		max-width: 220px;
+	}
+	.slider__content_adv {
+		min-height: 13rem;
+	}
+	.arrow_slider {
+		border: 10px solid $yellow;
+	}
+	.arrow_slider-right {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 0;
+		right: rem(25px);
+	}
+	.arrow_slider-left {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 0;
+		left: rem(25px);
+	}
+	.slider__content::after {
+    	left: 2.7rem;
+	}
+	.slider__content::before {
+    	right: 2.7rem;
+	}
+	.form__list {
+		justify-content: center;
+	}
+	.form__item {
+		width: 75%;
+		max-width: 270px;
+	}
+	.form__input {
+		font-size: 1.25rem;
+	}
+	.form__list_review::after {
+    	display: none;
+	}
+	.form__label_checkbox::before {
+		width: 25px;
+		height: 25px;
+		border-radius: 8px;
+	}
+	.city__adress {
+    	text-align: center;
+	}
+	.city__content_active {
+    	margin-right: 20px;
+	}
+	.brand {
+		margin-right: 0;
+	}
+	.nav-wrapper_footer {
+		align-items: center;
+		padding-bottom: 0;
+		margin-bottom: .5rem;
+		padding-top: 1.5rem;
+		.nav__item {
+			margin-right: 0;
+			margin-bottom: 0.5rem;	
+		}
+		.phones__city {
+			margin-left: 1rem;
+		}
+	}
+	.close {
+		width: 15px;
+		height: 15px;
+	}
+	.modal__title {
+	    font-size: 1rem;
+	}
+	
+
+}

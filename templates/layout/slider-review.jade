@@ -1,0 +1,23 @@
+section.slider-wrapper
+	.container
+		p.slider__title
+			| Отзывы об автосервисах
+			q.quote
+				| Навигатор
+		.slider.slider_review
+			.slider__content.slider__content_review
+				p.slider__comment
+					| Сегодня заехал на СТО "Навигатор". Замена внешнего шруса. Впечатления остались очень хорошие! Вежливый персонал, все чистенько и уютно, приемлимые цены и скидки по карте! Всю работу сделали за 45 минут. Теперь только к вам!
+				p.slider__author
+					| Алексей Шумилин
+				span(
+				class='arrow_slider arrow_slider-right')
+				span(
+				class='arrow_slider arrow_slider-left')
+			.slider__switch
+				+sliderButton('slide-rev-one', 'slider-rev')(checked='checked', class='slider__button_rev')
+				+sliderButton('slide-rev-two', 'slider-rev')(class='slider__button_rev')
+				+sliderButton('slide-rev-three', 'slider-rev')(class='slider__button_rev')
+				+sliderButton('slide-rev-four', 'slider-rev')(class='slider__button_rev')
+				+sliderButton('slide-rev-five', 'slider-rev')(class='slider__button_rev')
+				+sliderButton('slide-rev-six', 'slider-rev')(class='slider__button_rev')

@@ -1,0 +1,217 @@
+.header {
+	position: relative;
+	background-color: $grey;
+	background: url('../img/header-bg.jpg') no-repeat;
+	background-size: cover;
+	text-transform: uppercase;
+	z-index: 1;
+}
+.header::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $black;
+	opacity: .9;
+	z-index: -1;
+}
+.nav-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+	@include myriadPro(regular);
+	font-size: 1rem;
+	padding-top: rem(41px);
+	padding-bottom: rem(38px);
+	margin-bottom: rem(50px);
+	letter-spacing: 0.055555em;
+}
+.nav-wrapper::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: $black;
+}
+.nav {
+	flex: 1 0 auto;
+}
+.nav__list {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.nav__item {
+	margin-right: rem(32px);
+}
+.nav__item:last-child {
+	margin-right: 0;
+}
+.nav__link {
+	position: relative;
+	color: #fff;
+	transition: all .3s ease-in;
+}
+.nav__link::after, .phones__link::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: $yellow;
+	margin-top: rem(38px);
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .3s ease-in;
+}
+.nav__link::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: rem(37px);
+}
+.nav__item:hover {
+	.nav__link {
+		color: $yellow;
+	}
+	.nav__link::after {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.phones {
+	display: flex;
+	flex-flow: row wrap;
+}
+.phones__city {
+	margin-left: rem(37px);
+}
+.phones__link {
+	position: relative;
+	color: #fff;
+}
+.phones__link::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: rem(37px);
+}
+.phones__city:hover {
+	.phones__link::after {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.phones__content {
+	margin-left: 2px;
+	color: $yellow;
+}
+.start {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include myriadPro(bold);
+	color: $yellow;
+}
+.start__title {
+	font-size: rem(48px);
+	margin-bottom: 4px;
+	letter-spacing: 3px;
+}
+.start__name {
+	margin-bottom: rem(28px);
+}
+.start__logo {
+	width: 337px;
+    height: 67px;
+    fill: $yellow;
+}
+.start__text {
+	font-size: rem(32px);
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: rem(52px);
+}
+.options {
+	align-self: center;
+	width: 75.3%;
+}
+.options__list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.options__item {
+	margin-bottom: rem(51px);
+}
+.options-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: rem(165px);
+    text-align: center;
+    line-height: 1.5;
+}
+.options-content_center {
+	width: auto;
+}
+.options__img {
+	margin-bottom: rem(22px);
+}
+.options__icon {
+	width: 60px;
+	height: 60px;
+	fill: $yellow;
+}
+.options__link {
+	@include myriadPro(regular);
+	font-size: rem(18px);
+	color: $yellow;
+	letter-spacing: rem(1px);
+	text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.options__link:hover {
+	text-decoration: none;
+}
+.registration {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.registration__link {
+	@include myriadPro(bold);
+	font-size: rem(24px);
+	color: $black;
+	border-radius: 10px;
+	padding: rem(19px) rem(31px);
+	border: none;
+	background: linear-gradient(to bottom, #fbc90d, #fbb138);
+	margin-bottom: rem(44px);
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 1px 0px #f15a24;
+    transition: all .2s ease-in;
+}
+.registration__link:hover {
+	background: linear-gradient(#fceb1f, #fbcf0e);
+}
+.arrow_header {
+	margin-bottom: rem(39px);
+}
+.arrow_icon {
+	width: 30px;
+	height: 12px;
+	fill: $yellow;
+}

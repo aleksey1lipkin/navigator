@@ -1,0 +1,265 @@
+.form-wrapper {
+	background-color: #fff;
+	padding-top: rem(80px);
+}
+.form {
+}
+.request-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: rem(32px);
+	text-transform: uppercase;
+	text-align: center;
+	padding-left: rem(114px);
+}
+.request__title {
+	@include myriadPro(bold);
+	color: $black;
+	margin-bottom: rem(41px);
+	margin-right: 0.3125em;
+	letter-spacing: 0.05625em;
+}
+.request__select::-ms-expand { 
+    display: none;
+}
+.select-city {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: $yellow;
+    height: 49px;
+}
+.select-city::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $yellow;
+	width: 100%;
+    height: 100%;
+}
+.select-city::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: rem(10px);
+    right: rem(-30px);
+	background: url('/img/arrow-down-small.png') no-repeat;
+	transform: scaleY(-1);
+	width: 15px;
+	height: 10px;
+}
+.select-city__input, .cities__input, .cities__label {
+	display: none;
+}
+.cities__label {
+	@include myriadPro(bold);
+	transition: all .2s ease-in;
+}
+.cities__input:checked + .cities__label {
+	@include myriadPro(bold);
+	letter-spacing: 0.05625em;
+	color: $yellow;
+}
+.cities {
+
+}
+.cities__label_tlt:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: rem(24px);
+    right: rem(21px);
+	background: url('/img/arrow-down-small.png') no-repeat;
+	width: 15px;
+	height: 10px;
+}
+.select-city__input:checked ~ .cities {
+	position: absolute;
+	border-radius: 10px;
+	border: 1px solid $black;
+	background-color: #fff;
+    padding: 12px 49px 7px 15px;
+    top: -14px;
+    left: -20px;
+    z-index: 1;
+}
+.select-city__input:checked ~ .cities .cities__label {
+	display: block;
+	letter-spacing: 0.05625em;
+}
+.select-city__input:checked ~ .cities .cities__label:hover {
+	color: $yellow;
+}
+.cities__input:checked + .cities__label {
+	display: block;
+}
+.cities__input:checked + .cities__label::after {
+	display: none;
+}
+.form-content {
+	display: flex;
+	flex-direction: column;
+}
+.form__list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.form__item {
+	width: 31.3%;
+	margin-bottom: rem(28px);
+}
+.form__field {
+	display: flex;
+	flex-direction: column;
+}
+.form__label {
+	@include myriadPro(regular);
+	font-size: rem(14px);
+	color: $grey;
+	margin-bottom: rem(18px);
+	letter-spacing: 0.02857em;
+}
+.form__label_required::after {
+	content: "*";
+	color: red;
+	margin-left: 3px;
+}
+.form__input {
+	@include myriadPro(regular);
+	padding: rem(15px) rem(20px);
+    border-radius: 10px;
+    border: 1px solid $grey;
+    outline: none;
+}
+.select-service {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	padding-bottom: 19px;
+	border: none;
+}
+.select-service::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 10px;
+	background: url('/img/arrow-down-small.png') no-repeat;
+	transform: scaleY(-1) translateY(50%);
+	right: rem(23px);
+    top: 50%;
+}
+.select-service::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    border: 1px solid $grey;
+    border-radius: 10px;
+}
+.select-service__input {
+
+}
+.select-service__input, .services__input, .services__label {
+	display: none;
+}
+.select-service__input:checked ~ .services {
+	position: absolute;
+	border-radius: 10px;
+	border: 1px solid $grey;
+	background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.services__input:checked + .services__label {
+	display: block;
+}
+.services__input:checked + .services__label::after {
+	display: none;
+}
+.select-service__input:checked ~ .services .services__label {
+	display: block;
+	border-bottom: 1px solid $grey;
+	padding-bottom: 18px;
+	padding-left: 20px;
+    padding-top: 14px;
+}
+.select-service__input:checked ~ .services .services__label:last-child {
+	border-bottom: none;
+}
+.services {
+	@include myriadPro(regular);
+	font-size: rem(16px);
+	letter-spacing: 0.03125em;
+	
+}
+.services__input {
+
+}
+.services__label {
+	color: $black;
+	cursor: pointer;
+}
+.services__label:hover {
+	color: $yellow;
+	font-weight: bold;
+}
+.form__input:focus {
+	border-color: $yellow;
+}
+.form__input::placeholder {
+	@include myriadPro(italic);
+	font-size: rem(16px);
+	color: $grey;
+	letter-spacing: 0.03125em;
+}
+.form__item_textarea {
+	margin-bottom: rem(33px);
+}
+.form__input_textarea {
+	height: rem(104px);
+	resize: none;
+	padding-top: rem(12px);
+}
+.personal {
+	display: flex;
+	position: relative;
+}
+.form__checkbox {
+	display: none;
+}
+.form__label_checkbox {
+	display: flex;
+    align-items: center;
+	font-size: rem(16px);
+	color: $black;
+	margin-bottom: rem(50px);
+}
+.form__label_checkbox::before {
+	content: "";
+	display: block;
+	width: 34px;
+	height: 34px;
+	margin-right: 20px;
+	border: 1px solid $grey;
+	border-radius: 10px;
+	background: url('/img/check.svg') center no-repeat;
+	transition: all .2s ease-in;
+}
+.form__checkbox:checked + .form__label_checkbox::before {
+	border-color: $yellow;
+	background-color: $yellow;
+}
+.registration__link_request {
+	outline: none;
+	text-transform: uppercase;
+	margin-bottom: rem(85px);
+}

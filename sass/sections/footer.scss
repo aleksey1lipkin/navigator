@@ -1,0 +1,72 @@
+.footer {
+	background-color: #151515;
+}
+.nav-wrapper_footer {
+	align-items: flex-end;
+	text-transform: uppercase;
+	margin-bottom: rem(37px);
+}
+.nav-wrapper_footer::after {
+	background-color: #4d4d4d;
+}
+.nav__link_footer {
+	font-size: rem(14px);
+	color: #4d4d4d;
+}
+.nav__list {
+	.nav__link_footer:hover {
+	color: #fff;
+	}
+}
+
+.nav__link_footer::after, .phones__link_footer::after {
+	background-color: #fff;
+	margin-top: rem(39px);
+}
+.phones__city:hover {
+	.phones__link_footer, .phones__content_footer {
+		color: #fff;
+	}
+}
+.phones__link_footer {
+	color: #4d4d4d;
+	font-size: rem(14px);
+}
+.phones__content_footer {
+	color: #4d4d4d;
+	font-size: rem(14px);
+}
+.brand {
+	margin-right: rem(68px);
+}
+.brand__link {
+	display: block;
+}
+.brand__logo {
+	width: rem(151px);
+    height: rem(20px);
+	fill: #4d4d4d;
+}
+.brand__text {
+	display: none;
+	@include myriadPro(bold);
+	font-size: rem(24px);
+	color: #4d4d4d;
+}
+.footer__info {
+	@include myriadPro(regular);
+	font-size: rem(14px);
+	color: #4d4d4d;
+}
+.footer__text {
+	letter-spacing: 0.03571em;
+	margin-bottom: rem(8px);
+}
+.footer__text::before {
+	content: "\00A9";
+	display: inline-block;
+	margin-right: 3px;
+}
+.footer__rights {
+	letter-spacing: 0.03571em;
+}

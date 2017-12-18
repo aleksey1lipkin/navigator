@@ -1,0 +1,107 @@
+.slider-wrapper {
+	background-color:  $black;
+	padding-top: rem(78px);
+	text-transform: uppercase;
+}
+.slider__title {
+	@include myriadPro(bold);
+	text-align: center;
+	font-size: rem(32px);
+	color: $yellow;
+	letter-spacing: 0.0625em;
+	margin-bottom: rem(44px);
+}
+.quote {
+	quotes: "\00ab" "\00bb";
+}
+.slider {
+	display: flex;
+	flex-direction: column;
+}
+.slider__content {
+	position: relative;
+    
+    border-radius: 10px;
+    margin-bottom: rem(32px);
+}
+.slider__content_adv {
+	background: url("/img/slider-bg.jpg") no-repeat;
+	background-size: cover;
+	min-height: rem(422px);
+}
+.arrow_slider {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 13px solid $yellow;
+	top: 50%;
+	cursor: pointer;
+	transform: translateY(-50%);
+	transition: all .2s ease-in;
+}
+.arrow_slider-right {
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-right: 0;
+	right: rem(34px);
+}
+.arrow_slider-left {
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-left: 0;
+	left: rem(33px);
+}
+.arrow_slider-left:hover {
+	border: 13px solid #151515;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-left: 0;
+}
+.arrow_slider-right:hover {
+	border: 13px solid #151515;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-right: 0;
+}
+
+.slider__content::before, .slider__content::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 83%;
+	background-color: #c3c7d3;
+}
+.slider__content::before {
+	right: rem(80px);
+}
+.slider__content::after {
+	left: rem(80px);
+}
+.slider__switch {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.slider__button {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #4e5a60;
+	border-radius: 50%;
+	margin-right: 5px;
+	margin-bottom: 34px;
+	cursor: pointer;
+}
+.slider__radio:checked + .slider__button {
+	background-color: $yellow;
+	border: none;
+}
+.slider__radio {
+	display: none;
+}
+.registration__link_slider {
+	margin-bottom: rem(84px);
+}

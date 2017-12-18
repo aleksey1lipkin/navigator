@@ -1,0 +1,145 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* стили только для IE10 IE11 */
+   //HEADER
+   .start__logo {
+   		background: url('/img/navigator-logo.png') no-repeat;
+   		height: 42px;
+   }
+	.options__icon_discounts {
+		width: 26px;
+		height: 56px;
+		background: url('/img/discounts-2.png') no-repeat;
+	}
+	.options__icon_guarantee {
+		width: 50px;
+		height: 56px;
+		background: url('/img/guarantee.png') no-repeat;
+	}
+	.options__icon_recreation {
+		width: 52px;
+		height: 56px;
+		background: url('/img/recreation.png') no-repeat;
+	}
+	.arrow_icon {
+		background: url('/img/arrow-down.png') no-repeat;
+	}
+	//PRICE-LIST
+	.price__icon {
+		background: url('/img/png-sprite/png-sprite.png') no-repeat;
+		transition: none;
+		width: 48px;
+		height: 48px;
+	}
+	.price__icon_service {
+		background-position: -0px -816px;
+	}
+	.price__icon_cooling {
+		background-position: -0px -624px;
+	}
+	.price__icon_tyres {
+		background-position: -0px -336px;
+		width: 61px;
+	}
+	.price__icon_geometry {
+		background-position: -0px -1104px;
+		width: 38px;
+	}
+	.price__icon_steering-wheel {
+		background-position: -0px -1008px;
+	}
+	.price__icon_brakers {
+		background-position: -0px -432px;
+		width: 52px;
+	}
+	.price__icon_battery {
+		background-position: -0px -240px;
+		width: 61px;
+	}
+	.price__icon_starter {
+		background-position: -0px -912px;
+	}
+	.price__icon_optics {
+		background-position: -0px -144px;
+		width: 68px;
+	}
+	.price__icon_conditioner {
+		background-position: -0px -528px;
+	}
+	.price__icon_gear {
+		background-position: -0px -720px;
+	}
+	.price__icon_others {
+		background-position: -0px -48px;
+		width: 72px;
+	}
+	.price__item:hover {
+		.price__icon_service {
+			background-position: -0px -768px;
+		}
+		.price__icon_cooling {
+			background-position: -0px -576px;
+		}
+		.price__icon_tyres {
+			background-position: -0px -288px;
+		}
+		.price__icon_geometry {
+			background-position: -0px -1056px;
+		}
+		.price__icon_steering-wheel {
+			background-position: -0px -960px;
+		}
+		.price__icon_brakers {
+			background-position: -0px -384px;
+		}
+		.price__icon_battery {
+			background-position: -0px -192px;
+		}
+		.price__icon_starter {
+			background-position: -0px -864px;
+		}
+		.price__icon_optics {
+			background-position: -0px -96px;
+		}
+		.price__icon_conditioner {
+			background-position: -0px -480px; width: 48px; height: 48px;
+		}
+		.price__icon_gear {
+			background-position: -0px -672px;
+		}
+		.price__icon_others {
+			background-position: -0px -0px;
+		}
+	}
+	//LOCATION
+	.marker__icon {
+		background: url('/img/location-passive.png') no-repeat;
+	}
+	.marker__icon_active {
+		background: url('/img/location-active.png') no-repeat;
+	}
+	.map__icon {
+		height: 13px;
+		background: url('/img/arrow-up.png') no-repeat;
+	}
+	.brand__logo {
+		background: url('/img/Navigator-logo-black.png') no-repeat;
+		background-size: cover;
+	}
+	@media screen and (max-width: 992px) {
+		.brand__logo {
+			background: url('/img/Navigator-logo-large.png') no-repeat;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.brand__logo {
+			background: url('/img/Navigator-logo-medium.png') no-repeat;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.brand__logo {
+			width: 70px;
+		}
+	}
+}
+
+	

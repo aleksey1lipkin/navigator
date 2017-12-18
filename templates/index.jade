@@ -1,0 +1,23 @@
+include layout/_mixins
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width')
+		link(href='css/main.css' rel='stylesheet')
+		script(src='https://api-maps.yandex.ru/1.1/index.xml' type='text/javascript')
+		script(src='js/map.js')
+		title
+			| Навигатор - сеть автосервисов
+	body
+		.wrapper
+			include layout/header
+			.content
+				include layout/price
+				include layout/slider-adv
+				include layout/form-request
+				include layout/slider-review
+				include layout/form-review
+				include layout/location
+				include layout/map
+			include layout/footer

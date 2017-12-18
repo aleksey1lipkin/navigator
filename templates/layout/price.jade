@@ -1,0 +1,37 @@
+main.main
+	.container
+		p(
+		class='main__title'
+		id='priceTitle')
+			| Прайс на услуги
+		.price
+			ul.price__list
+				+priceItem ('#modal', 'service', 'Техническое обслуживание', '2')
+				+priceItem ('#modal', 'cooling', 'Система охлаждения', '2')
+				+priceItem ('#modal', 'tyres', 'Шиномонтажные работы', '2')
+				+priceItem ('#modal', 'geometry', 'Геометрия подвески', '1')
+				+priceItem ('#modal', 'steering-wheel', 'Подвеска, рулевое управление', '2')
+				+priceItem ('#modal', 'brakers', 'Тормозная система', '1')
+				+priceItem ('#modal', 'battery', 'Аккумуляторы и свечи', '3')
+				+priceItem ('#modal', 'starter', 'Генератор, стартер и ремни', '2')
+				+priceItem ('#modal', 'optics', 'Оптика', '1')
+				+priceItem ('#modal', 'conditioner', 'Система кондиционирования', '2')
+				+priceItem ('#modal', 'gear', 'Трансмиссия', '1')
+				+priceItem ('#modal', 'others', 'Другое', '1')
+			div(
+			class='modal-wrapper'
+			id='modal')
+				.modal
+					p.modal__title
+						| Заголовок модального окна
+					p.modal__content
+						| Какой-то контент
+					a(
+					class='close'
+					href='#close'
+					title='Закрыть')
+		.registration.registration_main
+			a(
+			class='registration__link registration__link_main'
+			href='#form')
+				| Записаться

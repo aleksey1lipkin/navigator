@@ -1,0 +1,148 @@
+article.form-wrapper
+	.container
+		form(
+		class='form'
+		action='#'
+		method='post')
+			.request-wrapper
+				p(
+				class='request__title'
+				id='form')
+					| Заявка на ремонт и обслуживание в 
+				label.select-city
+					input(
+					class='select-city__input'
+					type='radio'
+					name='city')
+					.cities
+						input(
+						class='cities__input'
+						type='radio'
+						name='city'
+						value='tlt'
+						id='tolyatti'
+						checked)
+						label(
+						class='cities__label cities__label_tlt'
+						for='tolyatti')
+							| Тольятти
+						input(
+						class='cities__input'
+						type='radio'
+						name='city'
+						value='syzran'
+						id='syzran')
+						label(
+						class='cities__label'
+						for='syzran')
+							| Сызрани
+			.form-content
+				ul.form__list
+					li.form__item
+						.form__field
+							label.form__label.form__label_required
+								| Представьтесь, пожалуйста
+							input(
+							class='form__input'
+							type='text'
+							name='login'
+							placeholder='Петров Петр')
+					li.form__item
+						.form__field
+							label.form__label.form__label_required
+								| Телефон
+							input(
+							class='form__input'
+							type='tel'
+							name='phone'
+							placeholder='+7 999 666 99 66')
+					li.form__item
+						.form__field
+							label.form__label
+								| E-mail
+							input(
+							class='form__input'
+							type='email'
+							name='email'
+							placeholder='example@mail.ru')
+					li.form__item
+						.form__field
+							label.form__label
+								| Марка автомобиля
+							input(
+							class='form__input'
+							type='text'
+							name='auto'
+							placeholder='Honda Civic')
+					li.form__item
+						.form__field
+							label.form__label
+								| Вид сервиса
+							label.select-service.form__input
+								input(
+								class='select-service__input'
+								type='radio'
+								name='service')
+								.services
+									input(
+									class='services__input'
+									type='radio'
+									name='service'
+									value='cooling'
+									id='cooling'
+									checked)
+									label(
+									class='services__label'
+									for='cooling')
+										| Система охлаждения
+									input(
+									class='services__input'
+									type='radio'
+									name='service'
+									value='technical'
+									id='technical')
+									label(
+									class='services__label'
+									for='technical')
+										| Техническое обслуживание
+									input(
+									class='services__input'
+									type='radio'
+									name='service'
+									value='tyres'
+									id='tyres')
+									label(
+									class='services__label'
+									for='tyres')
+										| Шиномонтажные работы
+					li.form__item
+						.form__field
+							label.form__label.form__label_required
+								| Удобная дата и время обслуживания
+							input(
+							class='form__input'
+							type='text'
+							name='date'
+							placeholder='22.05.2018 в 18:00')
+				.form__item_textarea
+					.form__field
+						label.form__label
+							| Дополнительные пожелания
+						textarea(
+						class='form__input form__input_textarea'
+						placeholder='Напишите дополнительные пожелания по обслуживанию'
+						name='extra')
+				.personal
+					input(
+					class='form__checkbox'
+					type='checkbox'
+					id='approve-one')
+					label(
+					class='form__label form__label_checkbox'
+					for='approve-one')
+						| Согласен на обработку персональных данных
+				.registration
+					input(
+					class='registration__link registration__link_request'
+					type='submit'
+					value='Записаться')
