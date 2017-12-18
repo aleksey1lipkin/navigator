@@ -2,30 +2,30 @@
    /* стили только для IE10 IE11 */
    //HEADER
    .start__logo {
-   		background: url('/img/navigator-logo.png') no-repeat;
+   		background: url('img/navigator-logo.png') no-repeat;
    		height: 42px;
    }
 	.options__icon_discounts {
 		width: 26px;
 		height: 56px;
-		background: url('/img/discounts-2.png') no-repeat;
+		background: url('img/discounts-2.png') no-repeat;
 	}
 	.options__icon_guarantee {
 		width: 50px;
 		height: 56px;
-		background: url('/img/guarantee.png') no-repeat;
+		background: url('img/guarantee.png') no-repeat;
 	}
 	.options__icon_recreation {
 		width: 52px;
 		height: 56px;
-		background: url('/img/recreation.png') no-repeat;
+		background: url('img/recreation.png') no-repeat;
 	}
 	.arrow_icon {
-		background: url('/img/arrow-down.png') no-repeat;
+		background: url('img/arrow-down.png') no-repeat;
 	}
 	//PRICE-LIST
 	.price__icon {
-		background: url('/img/png-sprite/png-sprite.png') no-repeat;
+		background: url('img/png-sprite/png-sprite.png') no-repeat;
 		transition: none;
 		width: 48px;
 		height: 48px;
@@ -112,27 +112,27 @@
 	}
 	//LOCATION
 	.marker__icon {
-		background: url('/img/location-passive.png') no-repeat;
+		background: url('img/location-passive.png') no-repeat;
 	}
 	.marker__icon_active {
-		background: url('/img/location-active.png') no-repeat;
+		background: url('img/location-active.png') no-repeat;
 	}
 	.map__icon {
 		height: 13px;
-		background: url('/img/arrow-up.png') no-repeat;
+		background: url('img/arrow-up.png') no-repeat;
 	}
 	.brand__logo {
-		background: url('/img/Navigator-logo-black.png') no-repeat;
+		background: url('img/Navigator-logo-black.png') no-repeat;
 		background-size: cover;
 	}
 	@media screen and (max-width: 992px) {
 		.brand__logo {
-			background: url('/img/Navigator-logo-large.png') no-repeat;
+			background: url('img/Navigator-logo-large.png') no-repeat;
 		}
 	}
 	@media screen and (max-width: 768px) {
 		.brand__logo {
-			background: url('/img/Navigator-logo-medium.png') no-repeat;
+			background: url('img/Navigator-logo-medium.png') no-repeat;
 		}
 	}
 	@media screen and (max-width: 576px) {

@@ -5,19 +5,19 @@ mixin priceItem (link, background, text, row)
 		href='#{link}'
 		title='#{text}')
 			div(
-			style="background-image: url('/img/price/#{background}.jpg')"
+			style="background-image: url('img/price/#{background}.jpg')"
 			class='price__content')
 				.price__img
 					if background != 'tyres'
 						svg(
 						class='price__icon price__icon_#{background}')
 							use(
-							xlink:href="/img/svg/symbol/svg/sprite.symbol.svg##{background}")
+							xlink:href="img/svg/symbol/svg/sprite.symbol.svg##{background}")
 					else
 						svg(
 						class='price__icon price__icon_tyres')
 							use(
-							xlink:href="/img/svg/symbol/svg/sprite.symbol.svg##{background}")
+							xlink:href="img/svg/symbol/svg/sprite.symbol.svg##{background}")
 				p(
 				class='price__text price__text_#{background}')= text
 
@@ -32,10 +32,3 @@ mixin sliderButton (identifier, name)
 	class='slider__button'
 	for='#{identifier}')
 
-//- mixin formItem (label, type, required)
-//- 	li.form__item
-//- 		.form__field
-//- 			label.form__label= label
-//- 			input(
-//- 			class='form__input'
-//- 			type='#{type}')

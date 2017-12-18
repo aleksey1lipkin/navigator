@@ -46,7 +46,7 @@
 	position: absolute;
 	top: rem(10px);
     right: rem(-30px);
-	background: url('/img/arrow-down-small.png') no-repeat;
+	background: url('img/arrow-down-small.png') no-repeat;
 	transform: scaleY(-1);
 	width: 15px;
 	height: 10px;
@@ -72,7 +72,7 @@
 	position: absolute;
 	top: rem(24px);
     right: rem(21px);
-	background: url('/img/arrow-down-small.png') no-repeat;
+	background: url('img/arrow-down-small.png') no-repeat;
 	width: 15px;
 	height: 10px;
 }
@@ -148,7 +148,7 @@
 	display: block;
 	width: 15px;
 	height: 10px;
-	background: url('/img/arrow-down-small.png') no-repeat;
+	background: url('img/arrow-down-small.png') no-repeat;
 	transform: scaleY(-1) translateY(50%);
 	right: rem(23px);
     top: 50%;
@@ -251,7 +251,7 @@
 	margin-right: 20px;
 	border: 1px solid $grey;
 	border-radius: 10px;
-	background: url('/img/check.svg') center no-repeat;
+	background: url('img/check.svg') center no-repeat;
 	transition: all .2s ease-in;
 }
 .form__checkbox:checked + .form__label_checkbox::before {
