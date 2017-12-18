@@ -1129,7 +1129,8 @@ a {
 .select-city__input:checked ~ .cities {
   position: absolute;
   border-radius: 10px;
-  border: 1px solid #263238;
+  -webkit-box-shadow: 0px 1px 3px 0px #263238;
+          box-shadow: 0px 1px 3px 0px #263238;
   background-color: #fff;
   padding: 12px 49px 7px 15px;
   top: -14px;
