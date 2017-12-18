@@ -1098,8 +1098,6 @@ a {
   top: 0.55556rem;
   right: -1.66667rem;
   background: url("../img/arrow-down-small.png") no-repeat;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
   width: 15px;
   height: 10px; }
 
@@ -1123,6 +1121,8 @@ a {
   top: 1.33333rem;
   right: 1.16667rem;
   background: url("../img/arrow-down-small.png") no-repeat;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
   width: 15px;
   height: 10px; }
 
@@ -1216,8 +1216,8 @@ a {
   width: 15px;
   height: 10px;
   background: url("../img/arrow-down-small.png") no-repeat;
-  -webkit-transform: scaleY(-1) translateY(50%);
-          transform: scaleY(-1) translateY(50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 1.27778rem;
   top: 50%; }
 
