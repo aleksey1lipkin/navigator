@@ -10,7 +10,7 @@ window.onload = function () {
         //change marker style
         var marker =  new YMaps.Style();
         marker.iconStyle = new YMaps.IconStyle();
-        marker.iconStyle.href = '/img/marker.png';
+        marker.iconStyle.href = '../img/marker.png';
         marker.iconStyle.size = new YMaps.Point(30, 45);
 
         //marker
